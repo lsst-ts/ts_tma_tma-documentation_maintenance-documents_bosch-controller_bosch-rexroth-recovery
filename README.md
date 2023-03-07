@@ -2,17 +2,10 @@
 
 | **Requested by:** | **GHESA** |
 | --- | --- |
-| **Doc. Code / Version nº:** | --/1.0 |
+| **Doc. Code** | -- |
 | **Editor:** | Alberto Izpizua |
 | **Approved by:** | Julen García |
 
-
-
-## Document History
-
-|Version|Date|Editor|Comments|
-|--|--|--|--|
-|1.0|06/03/2023|A. Izpizua|Document Creation|
 
 
 ## Introduction
