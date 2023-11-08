@@ -6,18 +6,16 @@
 | **Editor:** | Alberto Izpizua |
 | **Approved by:** | Julen García |
 
-
-
 ## Introduction
 
-This document shows how to recover the Bosch 
+This document shows how to recover the Bosch
 
 ## Diagnosis of the Issue
 
 The first thing we receive are some faults in azimuth and one of them is the STO. In the safety system window the interlock for the AZ cable wrap lim+ or AZ cable wrap lim-.
 Going to the Azimuth Cable Wrap window the position distance from azimuth and azimuth cable wrap is bigger than about 3 deg. This is not possible, since azimuth drags azimuth cable wrap when azimuth gets the hardware limit (this hardware limit is designed for that).
 
-![ACW out of hardware limits](Figures/AcwOutOfHardwareLimits.png) 
+![ACW out of hardware limits](Figures/AcwOutOfHardwareLimits.png)
 
 Also, the connection using Indraworks Engineering Tool(it is installed in the Tekniker's remote support computer), the connection is not possible. Making a ping to the Bosch controller (102.168.212.3) faults.
 
@@ -29,14 +27,15 @@ In the Bosch controller, located in the TMA-CBT-CS-AZ-0001, the F9XXXX error is 
 
 ## Solving the issue
 
-To solve the issue the controller must be rebooted manually with a power off power on sequence. 
+To solve the issue the controller must be rebooted manually with a power off power on sequence.
 
 ### Rebooting the Bosch Controller and checkin the status
+
 To remove power, take out the last module (orange one in next figure), pressing the flange marked with the blue arrow. The light from the control goes. After a few seconds, the module can be reallocated again to get the power for the controller again.
 
 ![Remove power in the Bosch controller](Figures/PowerOffBoschController.png)
 
-After recovering the power in the controller, it will start the boot process that takes some seconds. After that time, the Indraworks Engineering Tool could connect to the system. Probably there are som sync telegram failures errors. 
+After recovering the power in the controller, it will start the boot process that takes some seconds. After that time, the Indraworks Engineering Tool could connect to the system. Probably there are som sync telegram failures errors.
 
 ![Indraworks connected with sync failures](Figures/FirstIndraworksConnectionWithFailures.png)
 
@@ -82,6 +81,3 @@ In the EUI, go to the Azimuth Cable Wrap window and with Azimuth axis in idle st
 ![Move ACW to Azimuth center position](Figures/MoveAcwToAzimuthCenterPosition.png)
 
 Reset the Azimuth cable wrap issue in the safety system and continue with the powering on of the system.
-
-
-
