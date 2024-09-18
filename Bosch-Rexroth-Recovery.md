@@ -1,4 +1,4 @@
-# BoschRexrothRecovery
+# Bosch Rexroth Recovery
 
 | **Requested by:** | **GHESA** |
 | --- | --- |
