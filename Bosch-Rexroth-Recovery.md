@@ -53,6 +53,9 @@ If an error related with actual position value outside absolute encoder window a
 
 ### Solving issue with actual position value
 
+> ⚠ **WARNING** ⚠
+> Only proceed if you fully understand the procedure as some of these steps are delicate and could be causing further troubles
+
 This point is valid only if the error Actual position value outside absolute encoder window, shown in the figure above, appears in the log and the azimuth cable wrap motors are in fault (red).
 
 Open the AZCW_Axis1 motor
